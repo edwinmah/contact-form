@@ -1,0 +1,112 @@
+/**
+ * General Styles
+ */
+
+body {
+  background: #ffffff;
+  color: #222222;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 87.5%;
+  line-height: 1.5;
+}
+
+@media (min-width: 48em) {
+  body {
+    font-size: 100%;
+  }
+}
+
+/* Form Elements */
+label {
+  display: block;
+  margin-bottom: 0.625em;
+}
+
+textarea {
+  height: 10em;
+  border-color: #d0d0d0;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 1em;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #f2f9fd;
+}
+
+button {
+  border: 1px solid transparent;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  color: #ffffff;
+  background-color: #176691;
+}
+
+button:active,
+button:hover,
+button:focus {
+  background-color: #173a4d;
+}
+
+/**
+ * Helper Styles
+ */
+
+/* Hide Visually */
+.visuallyhidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  position: static;
+  height: auto;
+  width: auto;
+  margin: 0;
+  clip: auto;
+  overflow: visible;
+}
+
+/**
+ * Layout
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 87.5%;
+  max-width: 38.75rem;
+}
+
+/**
+ * Contact Form
+ */
+@media (min-width: 30em) {
+  .sender {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
