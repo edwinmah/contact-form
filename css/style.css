@@ -103,10 +103,12 @@ html {
 /**
  * Contact Form
  */
-@media (min-width: 30em) {
-  .sender {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
+@supports (display: grid) {
+  @media (min-width: 30em) {
+    .sender {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
   }
 }
