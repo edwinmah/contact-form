@@ -19,11 +19,11 @@ body {
 /* Form Elements */
 label {
   display: block;
-  margin-bottom: 0.625em;
+  margin-bottom: 0.625rem;
 }
 
 textarea {
-  height: 10em;
+  height: 10rem;
   border-color: #d0d0d0;
 }
 
@@ -31,7 +31,7 @@ input,
 textarea,
 button {
   width: 100%;
-  padding: 1em;
+  padding: 1rem;
 }
 
 input:focus,
